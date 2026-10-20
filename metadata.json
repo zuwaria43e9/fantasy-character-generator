@@ -1,0 +1,8 @@
+{
+  "name": "Fantasy Character Generator",
+  "description": "Medieval fantasy character generator featuring randomized names, authentic RPG classes, attributes, heraldry, lore, and character rosters.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

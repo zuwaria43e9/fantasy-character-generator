@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-cinzel: 'Cinzel', Georgia, serif;
+    --font-cinzel-decorative: 'Cinzel Decorative', 'Almendra Display', 'MedievalSharp', Georgia, serif;
+    --font-fantasy: 'MedievalSharp', 'Cinzel Decorative', cursive, serif;
+    --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+  body {
+    font-family: var(--font-body);
+  }
+  h1, h2, h3, h4, .font-cinzel {
+    font-family: var(--font-cinzel);
+  }
+}
+
+/* Stylized fantasy font for the character's name */
+.font-fantasy-name {
+  font-family: var(--font-cinzel-decorative);
+  letter-spacing: 0.04em;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.9), 0 0 20px rgba(234, 179, 8, 0.35);
+}
+
+.gold-foil-text {
+  background: linear-gradient(180deg, #fffbeb 0%, #fef08a 25%, #eab308 65%, #92400e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.8));
+}
+
+/* Alchemist's Workbench Texture & Grimoire Borders */
+.workbench-panel {
+  background: radial-gradient(circle at 50% 0%, rgba(35, 25, 18, 0.95) 0%, rgba(18, 14, 11, 0.98) 100%);
+  border: 1px solid rgba(217, 180, 114, 0.28);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.85), inset 0 1px 0 rgba(255, 230, 170, 0.15), inset 0 0 35px rgba(0, 0, 0, 0.6);
+}
+
+.brass-corner {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-color: rgba(234, 179, 8, 0.6);
+  pointer-events: none;
+}
+
+.gold-glow {
+  box-shadow: 0 0 30px -5px rgba(245, 158, 11, 0.35);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(180deg, #fef08a 0%, #eab308 50%, #b45309 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
